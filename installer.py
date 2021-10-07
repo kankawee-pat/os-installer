@@ -32,6 +32,7 @@ def main():
         print(banner)
         print(f"version: {version}"+f"  Support: {name_bank}"+f" {donate}\n\n")
         in_ccminer()
+        break
     elif option == 0:
         os.system("clear")
         print(banner)
