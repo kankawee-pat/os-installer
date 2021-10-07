@@ -12,7 +12,7 @@ Y888888P VP   V8P `8888Y'    YP    YP   YP Y88888P Y88888P """
 
 
 def main():
-    os.system("cls") ###mobile clear
+    os.system("cls" or "clear")
     print(banner)
     print(f"version: {version}"+f"  Support: {name_bank}"+f" {donate}\n\n")
     print("[1] ติดตั้ง ubuntu\n[2] ติดตั้ง ccminer\n[0] ออก\n")
@@ -23,17 +23,17 @@ def main():
         print("\nเกิดข้อผิดพลาด!!")
         main()
     if option == 1:
-        os.system("cls")
+        os.system("cls" or "clear")
         print(banner)
         print(f"version: {version}"+f"  Support: {name_bank}"+f" {donate}\n\n")
         in_ubun()
     elif option == 2:
-        os.system("cls")
+        os.system("cls" or "clear")
         print(banner)
         print(f"version: {version}"+f"  Support: {name_bank}"+f" {donate}\n\n")
         in_ccminer()
     elif option == 0:
-        os.system("cls")
+        os.system("cls" or "clear")
         print(banner)
         print(f"version: {version}"+f"  Support: {name_bank}"+f" {donate}\n\n")
         print("\nออก")
