@@ -26,7 +26,7 @@ def in_ubun():
         os.system("apt-get install wget -y")
         os.system("apt-get install proot -y")
         os.system("git clone https://github.com/MFDGaming/ubuntu-in-termux")
-        os.system("cd ubuntu-in-termux")
+        os.system("sh u_gress.sh")
         print("\n\n\nติดตั้งสำเร็จ")
        
     except:
