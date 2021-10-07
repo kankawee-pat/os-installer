@@ -20,7 +20,6 @@ def in_ubun():
     try:
         os.system("chmod +x ubun.sh")
         os.system("mv ubun.sh ../")
-        os.system("cd")
         os.system("apt-get update -y")
         os.system("apt-get upgrade -y")
         os.system("apt-get install git -y")
@@ -28,8 +27,6 @@ def in_ubun():
         os.system("apt-get install proot -y")
         os.system("git clone https://github.com/MFDGaming/ubuntu-in-termux")
         os.system("cd ubuntu-in-termux")
-        os.system("chmod +x ubuntu.sh")
-        os.system("./ubuntu.sh")
         print("\n\n\nติดตั้งสำเร็จ")
        
     except:
