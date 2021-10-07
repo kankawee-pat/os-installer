@@ -1,4 +1,4 @@
 apt update -y
-apt install python -y
+apt install python3 -y
 cd installer
-python installer.py
+python3 installer.py
