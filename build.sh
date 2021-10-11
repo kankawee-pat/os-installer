@@ -5,7 +5,7 @@ cd
 apt-get update -y
 apt-get install python3 -y
 pkg install proot-distro -y
-cd installer
+cd os-installer
 chmod +x os-installer
 mv os-installer ../
-python3 installer.py
+python3 os-installer.py
