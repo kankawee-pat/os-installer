@@ -1,6 +1,6 @@
 cd ..
 cd ~/../usr/etc/apt
-rm -rf
+rm -rf sources.list.d
 cd
 apt-get update -y
 apt-get install python3 -y
