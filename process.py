@@ -3,7 +3,6 @@ import os, time, json
 def ubuntuc():
     try:
         os.system("chmod +x ubun.sh")
-        os.system("mv ubun.sh ../")
         os.system("apt-get update -y")
         os.system("apt-get upgrade -y")
         os.system("apt-get install git -y")
