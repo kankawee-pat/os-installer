@@ -12,7 +12,7 @@ from process import *
 
 
 def banner():
-    os.system("cls")
+    os.system("clear")
     banner = f""" \033[93mos-installer version\033[00m: {version}
 ┌─┐┌─┐   ┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  ┌─┐┬─┐
 │ │└─┐───││││└─┐ │ ├─┤│  │  ├┤ ├┬┘
