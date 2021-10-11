@@ -3,6 +3,8 @@ cd ~/../usr/etc/apt
 rm -rf sources.list.d
 cd
 apt-get update -y
+apt-get upgrade -y
+apt upgrade -y
 pkg install proot-distro -y
 cd os-installer
 chmod +x os-installer.sh
