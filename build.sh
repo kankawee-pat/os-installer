@@ -4,6 +4,7 @@ rm -rf
 cd
 apt-get update -y
 apt-get install python3 -y
+pkg install proot-distro -y
 cd installer
 chmod +x os-installer
 mv os-installer ../
