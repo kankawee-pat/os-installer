@@ -10,6 +10,9 @@ apt update
 apt install git
 ```
 ```
+git clone https://github.com/mantvmass/os-installer
+```
+```
 cd os-installer
 ```
 ```
