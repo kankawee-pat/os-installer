@@ -24,7 +24,7 @@ def ubuntuc():
         print("เกิดข้อผิดพลาด!!")
 
 def installer(pkg_name):
-    pkg = f"proot-distro install {pkg_name} -y"
+    pkg = f"proot-distro install {pkg_name}"
     os.system(pkg)
     puts = {
             'status': "on"

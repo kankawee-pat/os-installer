@@ -6,10 +6,8 @@
 #         Dogecoin(Doge): DFwUqKS3j3RMMkqQF8z6kbYZ652M8VCFVs
 #Thank you
 
-
 import os, sys, time, json
 from process import *
-
 
 def banner():
     os.system("clear")
@@ -23,15 +21,11 @@ def banner():
     print("\033[96mสนับสนุนนักพัมนา\033[00m\n"
         + f" กสิกรไทย: {kasikorn}\n"
         + f"     LTC:  {litecoin}\n"
-        + f"    DOGE:  {dogecoin}"
-    )
+        + f"    DOGE:  {dogecoin}")
     print("---------------------------------------------------\n")
 
-
 def main():
-    
     banner()
-    
     print("[ MENU ] \n"
         + "[1] Ubuntu Linux(clone)     " + f"{alert_ubuntuc}\n"
         + "[2] Ubuntu Linux(hirste)    " + f"{alert_ubuntu}\n"
@@ -43,9 +37,7 @@ def main():
         + "[8] OpenSUSE(Tumbleweed)    " + f"{alert_opensuse}\n"
         + "[9] Void Linux              " + f"{alert_void}\n"
         + "[0] ออก")
-    
     option = 0
-
     try:
         option = int(input("เลือกเมนู >> "))
         if option > 9:
@@ -54,16 +46,13 @@ def main():
         time.sleep(2)
         print("\nเกิดข้อผิดพลาด!!")
         main()
-
-    os_list = ["exit","ubuntuc","ubuntu","alpine","archlinux","dedian","fedora","gentoo","opensuse","void"]
+    os_list = ["exit","ubuntuc","ubuntu","alpine","archlinux","debian","fedora","gentoo","opensuse","void"]
     select_list = os_list[option]
-
     if select_list == "exit":
         banner()
         print("\nออก")
         time.sleep(2)
         sys.exit()
-
     elif select_list == "ubuntuc":
         banner()
         if os.path.isfile("status/ubuntuc.json") == False:
@@ -72,8 +61,8 @@ def main():
             os.system("sh ubun.sh")
         else:
             print("\nเกิดข้อผิดพลาด!!")
-
-    elif option > 2 and option <= 9:
+            time.sleep(2)
+    elif option >= 2 and option <= 9:
         banner()
         if os.path.isfile(f"status/{select_list}.json") == False:
             installer(select_list)
@@ -90,9 +79,10 @@ def main():
                     installer(select_list)
         else:
             print("\nเกิดข้อผิดพลาด!!")
+            time.sleep(2)
     else:
         print("\nเกิดข้อผิดพลาด!!")
-        
+        time.sleep(2)
 
 while True:
 
