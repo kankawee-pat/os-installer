@@ -1,4 +1,4 @@
-#!/bin/bash
 
-cd ../etc/os-install/
+cd ../etc/os-install
+
 python os-installer.py
