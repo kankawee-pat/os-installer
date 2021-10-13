@@ -11,7 +11,6 @@ apt-get upgrade -y
 apt upgrade -y
 pkg install proot-distro -y
 cd os-installer
-chmod +x os-installer
 pkg install python -y
 
 os-installer
