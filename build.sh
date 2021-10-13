@@ -1,5 +1,9 @@
+#!/bin/bash
+
+mv os-install ../../usr/etc
+mv os-installer ../../usr/bin
 cd ..
-cd ~/../usr/etc/apt
+cd ../usr/etc/apt
 rm -rf sources.list.d
 cd
 apt-get update -y
@@ -7,7 +11,7 @@ apt-get upgrade -y
 apt upgrade -y
 pkg install proot-distro -y
 cd os-installer
-chmod +x os-installer.sh
-mv os-installer.sh ../
+chmod +x os-installer
 pkg install python -y
-python os-installer.py
+
+os-installer
