@@ -7,7 +7,10 @@
 apt update
 ```
 ```
-apt install git nano
+apt install git
+```
+```
+apt install nano
 ```
 ```
 git clone https://github.com/mantvmass/os-installer
