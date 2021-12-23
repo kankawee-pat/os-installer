@@ -4,10 +4,10 @@
 
 วิธีติดตั้ง:
 ```
-apt update
+apt update -y
 ```
 ```
-apt install git
+apt install git -y
 ```
 ```
 apt install nano
