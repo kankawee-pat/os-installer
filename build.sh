@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd os-installer
 chmod +x os-installer
 
 
