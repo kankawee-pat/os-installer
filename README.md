@@ -10,16 +10,10 @@ apt update -y
 apt install git -y
 ```
 ```
-apt install nano
-```
-```
 git clone https://github.com/mantvmass/os-installer
 ```
 ```
 cd os-installer
-```
-```
-chmod +x os-installer
 ```
 ```
 sh build.sh
