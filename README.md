@@ -12,7 +12,7 @@ apt update -y
 apt install git -y
 ```
 ```
-git clone https://github.com/mantvmass/os-installer
+git clone https://github.com/kankawee-pat/os-installer
 ```
 ```
 cd os-installer
